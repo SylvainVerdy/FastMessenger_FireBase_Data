@@ -3,6 +3,7 @@ package com.example.verdy.fastmessenger_firebase.Data.ApiCall
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import android.util.Log
 import com.example.verdy.fastmessenger_firebase.R
 import com.google.gson.GsonBuilder
 import io.reactivex.android.schedulers.AndroidSchedulers
