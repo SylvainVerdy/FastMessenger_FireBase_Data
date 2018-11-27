@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "378380863985",
+    "firebase_url": "https://fastchatmessenger.firebaseio.com",
+    "project_id": "fastchatmessenger",
+    "storage_bucket": "fastchatmessenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378380863985:android:6ddd85ff450e7d0d",
+        "android_client_info": {
+          "package_name": "com.example.verdy.fastmessenger_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378380863985-d8i9okdl4rnbpe64r6cje338kio1cfci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQY5axb27MpjpJYAOOwECCJnmgzGIDxxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
