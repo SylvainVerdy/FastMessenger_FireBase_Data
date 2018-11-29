@@ -1,6 +1,9 @@
 package com.example.verdy.fastmessenger_firebase.models
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-class User(val uid: String, val username: String, val profileImageUrl: String) {
+@Parcelize
+class User(val uid: String, val username: String, val profileImageUrl: String):Parcelable {
   constructor() : this("", "", "")
 }
