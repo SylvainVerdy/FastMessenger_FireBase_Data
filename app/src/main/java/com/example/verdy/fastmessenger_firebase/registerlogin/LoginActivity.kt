@@ -8,7 +8,7 @@ import android.widget.Toast
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.RestDataStorage
 import com.google.firebase.auth.FirebaseAuth
 import com.example.verdy.fastmessenger_firebase.R
-import com.example.verdy.fastmessenger_firebase.messages.LatestMessageActivity
+import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity: AppCompatActivity() {
@@ -35,7 +35,7 @@ class LoginActivity: AppCompatActivity() {
   }
 
   private fun Redirection(){
-    val intent = Intent(this, LatestMessageActivity::class.java)
+    val intent = Intent(this, LatestMessagesActivity::class.java)
     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
     startActivity(intent)
   }
@@ -54,7 +54,7 @@ class LoginActivity: AppCompatActivity() {
 
           Log.d("Login", "Successfully logged in: ${it.result!!.user.uid}")
 
-          val intent = Intent(this, LatestMessageActivity::class.java)
+          val intent = Intent(this, LatestMessagesActivity::class.java)
           intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
           startActivity(intent)
         }
