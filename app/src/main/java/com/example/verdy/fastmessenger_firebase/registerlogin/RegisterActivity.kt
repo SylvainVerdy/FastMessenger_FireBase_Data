@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.example.verdy.fastmessenger_firebase.R
 import com.example.verdy.fastmessenger_firebase.models.User
-import com.example.verdy.fastmessenger_firebase.messages.LatestMessageActivity
+import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
 import java.util.*
@@ -130,7 +130,7 @@ class RegisterActivity : AppCompatActivity() {
         .addOnSuccessListener {
           Log.d(TAG, "Finally we saved the user to Firebase Database")
 
-          val intent = Intent(this, LatestMessageActivity::class.java)
+          val intent = Intent(this, LatestMessagesActivity::class.java)
           intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
           startActivity(intent)
 
