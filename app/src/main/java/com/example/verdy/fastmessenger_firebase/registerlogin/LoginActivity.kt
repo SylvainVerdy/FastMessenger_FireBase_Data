@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
-import com.example.verdy.fastmessenger_firebase.Data.ApiCall.RestDataStorage
+import com.example.verdy.fastmessenger_firebase.Data.ApiCall.actvities.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.verdy.fastmessenger_firebase.R
 import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
@@ -19,7 +19,7 @@ class LoginActivity: AppCompatActivity() {
     setContentView(R.layout.activity_login)
 
     api_button.setOnClickListener {
-      val intent = Intent(this, RestDataStorage::class.java)
+      val intent = Intent(this, MainActivity::class.java)
       startActivity(intent)
     }
 
