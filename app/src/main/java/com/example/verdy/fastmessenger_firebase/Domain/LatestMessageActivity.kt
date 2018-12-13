@@ -1,26 +1,21 @@
-package com.example.verdy.fastmessenger_firebase.messages
+package com.example.verdy.fastmessenger_firebase.Domain
 
 import android.content.Intent
-import android.nfc.Tag
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import com.example.verdy.fastmessenger_firebase.R
+import com.example.verdy.fastmessenger_firebase.Presentation.LastestMessageRow
+import com.example.verdy.fastmessenger_firebase.models.ChatMessage
 import com.example.verdy.fastmessenger_firebase.models.User
-import com.example.verdy.fastmessenger_firebase.registerlogin.RegisterActivity
-import com.example.verdy.fastmessenger_firebase.views.LastestMessageRow
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
-import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_latest_message.*
-import kotlinx.android.synthetic.main.latest_message_row.view.*
 
 
 class LatestMessagesActivity : AppCompatActivity() {
@@ -37,7 +32,7 @@ class LatestMessagesActivity : AppCompatActivity() {
         recyclerview_latest_messages.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
 
         adapter.setOnItemClickListener{item, view ->
-            val intent = Intent(this,ChatLogActivity::class.java)
+            val intent = Intent(this, ChatLogActivity::class.java)
             val row = item as LastestMessageRow
 
             intent.putExtra(NewMessageActivity.USER_KEY,row.chatPartnerUser)
@@ -53,7 +48,7 @@ class LatestMessagesActivity : AppCompatActivity() {
 
 
 
-    val latestmessagesMap = HashMap<String,ChatMessage>()
+    val latestmessagesMap = HashMap<String, ChatMessage>()
 
     private fun refreshRecyclerViewMessages(){
         adapter.clear()
@@ -106,7 +101,8 @@ class LatestMessagesActivity : AppCompatActivity() {
         ref.addListenerForSingleValueEvent(object: ValueEventListener {
 
             override fun onDataChange(p0: DataSnapshot) {
-                currentUser = p0.getValue(User::class.java)
+                currentUser = p0.getValue(
+                    User::class.java)
                 Log.d("LatestMessages", "Current user ${currentUser?.profileImageUrl}")
             }
 

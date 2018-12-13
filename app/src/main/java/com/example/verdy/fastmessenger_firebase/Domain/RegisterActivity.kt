@@ -1,4 +1,4 @@
-package  com.example.verdy.fastmessenger_firebase.registerlogin
+package  com.example.verdy.fastmessenger_firebase.Domain
 
 
 import android.app.Activity
@@ -14,7 +14,6 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.example.verdy.fastmessenger_firebase.R
 import com.example.verdy.fastmessenger_firebase.models.User
-import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
 import java.util.*
@@ -124,7 +123,11 @@ class RegisterActivity : AppCompatActivity() {
     val uid = FirebaseAuth.getInstance().uid ?: ""
     val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
 
-    val user = User(uid, username_edittext_register.text.toString(), profileImageUrl)
+    val user = User(
+      uid,
+      username_edittext_register.text.toString(),
+      profileImageUrl
+    )
 
     ref.setValue(user)
         .addOnSuccessListener {

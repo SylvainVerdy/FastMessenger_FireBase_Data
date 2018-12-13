@@ -1,4 +1,4 @@
-package com.example.verdy.fastmessenger_firebase.registerlogin
+package com.example.verdy.fastmessenger_firebase.Domain
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +8,7 @@ import android.widget.Toast
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.actvities.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.verdy.fastmessenger_firebase.R
-import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
-import com.example.verdy.fastmessenger_firebase.views.MenuActivity
+import com.example.verdy.fastmessenger_firebase.Presentation.MenuActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity: AppCompatActivity() {

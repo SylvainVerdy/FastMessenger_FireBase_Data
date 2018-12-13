@@ -1,4 +1,4 @@
-package com.example.verdy.fastmessenger_firebase.views
+package com.example.verdy.fastmessenger_firebase.Presentation
 
 import com.example.verdy.fastmessenger_firebase.R
 import com.example.verdy.fastmessenger_firebase.models.User

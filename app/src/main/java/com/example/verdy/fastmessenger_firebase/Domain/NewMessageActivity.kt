@@ -1,6 +1,5 @@
-package com.example.verdy.fastmessenger_firebase.messages
+package com.example.verdy.fastmessenger_firebase.Domain
 
-import android.content.ClipData
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -50,7 +49,7 @@ class NewMessageActivity : AppCompatActivity() {
                 }
                 adapter.setOnItemClickListener { item, view ->
                     val userItem = item as UserItem
-                    val intent = Intent(view.context,ChatLogActivity::class.java)
+                    val intent = Intent(view.context, ChatLogActivity::class.java)
                     intent.putExtra(USER_KEY,userItem.user)
                     startActivity(intent)
                     finish()

@@ -1,4 +1,4 @@
-package com.example.verdy.fastmessenger_firebase.views
+package com.example.verdy.fastmessenger_firebase.Presentation
 
 
 import android.content.Intent
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.actvities.MainActivity
 import com.example.verdy.fastmessenger_firebase.R
-import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
+import com.example.verdy.fastmessenger_firebase.Domain.LatestMessagesActivity
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {
