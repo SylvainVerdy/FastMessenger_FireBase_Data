@@ -1,4 +1,4 @@
-package com.example.verdy.fastmessenger_firebase.models
+package com.example.verdy.fastmessenger_firebase.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

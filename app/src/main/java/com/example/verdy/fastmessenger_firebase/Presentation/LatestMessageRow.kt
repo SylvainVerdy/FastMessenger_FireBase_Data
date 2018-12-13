@@ -1,8 +1,8 @@
 package com.example.verdy.fastmessenger_firebase.Presentation
 
 import com.example.verdy.fastmessenger_firebase.R
-import com.example.verdy.fastmessenger_firebase.models.ChatMessage
-import com.example.verdy.fastmessenger_firebase.models.User
+import com.example.verdy.fastmessenger_firebase.data.ChatMessage
+import com.example.verdy.fastmessenger_firebase.data.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

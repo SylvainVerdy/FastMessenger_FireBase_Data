@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.example.verdy.fastmessenger_firebase.R
-import com.example.verdy.fastmessenger_firebase.models.User
+import com.example.verdy.fastmessenger_firebase.data.User
 import kotlinx.android.synthetic.main.activity_register.*
 
 import java.util.*
