@@ -9,6 +9,7 @@ import com.example.verdy.fastmessenger_firebase.Data.ApiCall.actvities.MainActiv
 import com.google.firebase.auth.FirebaseAuth
 import com.example.verdy.fastmessenger_firebase.R
 import com.example.verdy.fastmessenger_firebase.messages.LatestMessagesActivity
+import com.example.verdy.fastmessenger_firebase.views.MenuActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity: AppCompatActivity() {
@@ -54,7 +55,7 @@ class LoginActivity: AppCompatActivity() {
 
           Log.d("Login", "Successfully logged in: ${it.result!!.user.uid}")
 
-          val intent = Intent(this, LatestMessagesActivity::class.java)
+          val intent = Intent(this, MenuActivity::class.java)
           intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
           startActivity(intent)
         }

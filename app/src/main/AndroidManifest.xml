@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.verdy.fastmessenger_firebase">
+		  package="com.example.verdy.fastmessenger_firebase">
 
 	<uses-permission android:name="android.permission.INTERNET"/>
 
@@ -31,19 +31,19 @@
 					android:name="android.support.PARENT_ACTIVITY"
 					android:value=".messages.LatestMessagesActivity"/>
 		</activity>
-
 		<activity android:name=".messages.ChatLogActivity">
 			<meta-data
 					android:name="android.support.PARENT_ACTIVITY"
 					android:value=".messages.LatestMessagesActivity"/>
 		</activity>
-
-
+		<activity android:name=".views.MenuActivity">
+		</activity>
 		<activity android:name=".Data.ApiCall.actvities.MainActivity">
 			<meta-data
 					android:name="android.support.PARENT_ACTIVITY"
-					android:value=".registerlogin.LoginActivity"/>
+					android:value=".views.MenuActivity"/>
 		</activity>
+
 	</application>
 
 </manifest>

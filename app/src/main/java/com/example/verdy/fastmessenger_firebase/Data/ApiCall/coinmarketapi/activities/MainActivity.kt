@@ -8,9 +8,7 @@ import com.example.verdy.fastmessenger_firebase.Data.ApiCall.model.CryptoModel
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.utils.Constants
 import com.example.verdy.fastmessenger_firebase.R
 import com.google.gson.Gson
-import com.google.gson.annotations.SerializedName
 import com.google.gson.reflect.TypeToken
-import kotlinx.android.synthetic.main.abc_cascading_menu_item_layout.*
 import kotlinx.android.synthetic.main.api_recycler_view.*
 
 import okhttp3.*
