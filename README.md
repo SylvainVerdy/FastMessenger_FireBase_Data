@@ -60,4 +60,3 @@ sequenceDiagram
 Applicationmobile->> Api: URL, GET 
 Api->> Applicationmobile: JSON file
 ```
-
