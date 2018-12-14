@@ -3,6 +3,7 @@ package com.example.verdy.fastmessenger_firebase.Data.ApiCall.actvities
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.adapter.CryptoAdapter
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.model.CryptoModel
 import com.example.verdy.fastmessenger_firebase.Data.ApiCall.utils.Constants
@@ -51,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         cryptoRecyclerView.layoutManager = LinearLayoutManager(this)
         adapter = CryptoAdapter()
         cryptoRecyclerView.adapter = adapter
+
+
         getCoins()
     }
 

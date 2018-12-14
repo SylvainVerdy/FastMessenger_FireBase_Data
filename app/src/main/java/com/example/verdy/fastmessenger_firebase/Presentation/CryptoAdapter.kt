@@ -34,7 +34,11 @@ class CryptoAdapter : RecyclerView.Adapter<CryptoAdapter.CryptoViewHolder>() {
          * get CryptoModel data and bind them to corresponding
          * viewholder widgets(text view, imageview etc)
          */
+
+
         holder.apply {
+
+
             coinName.text = coin.name
             coinSymbol.text = coin.symbol
             coinPrice.text = coin.price_eur
@@ -65,6 +69,8 @@ class CryptoAdapter : RecyclerView.Adapter<CryptoAdapter.CryptoViewHolder>() {
                 coin.percent_change_7d.contains("-") -> "#ff0000"
                 else -> "#32CD32"
             }))
+
+
         }
     }
 
@@ -72,6 +78,8 @@ class CryptoAdapter : RecyclerView.Adapter<CryptoAdapter.CryptoViewHolder>() {
         /**
          * ViewHolder items (textviews, imageviews) from the crypto_layout.xml
          */
+
+
         var coinName = view.coinName
         var coinSymbol = view.coinSymbol
         var coinPrice = view.priceUsdText
@@ -79,6 +87,8 @@ class CryptoAdapter : RecyclerView.Adapter<CryptoAdapter.CryptoViewHolder>() {
         var twentyFourHourChange = view.percentChange24hText
         var sevenDayChange = view.percentChange7dayText
         var coinIcon = view.coinIcon
+
+
     }
 
     fun updateData(cryptoCoins: List<CryptoModel>) {

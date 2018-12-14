@@ -1,5 +1,6 @@
 package com.example.verdy.fastmessenger_firebase.Data.ApiCall.model
 
+import android.content.DialogInterface
 import com.google.gson.annotations.SerializedName
 
 
@@ -17,5 +18,6 @@ data class CryptoModel(
     @SerializedName("percent_change_24h")
     val percent_change_24h: String,
     @SerializedName("percent_change_7d")
-    val percent_change_7d: String
+    val percent_change_7d: String,
+    val setOnClickListener: DialogInterface.OnClickListener
 )
