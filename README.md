@@ -21,13 +21,13 @@ Présentation du projet:
 
 
 # Pourquoi le chat et les cryptomonnaies?
-Notre projet a été lancé, dans l'idée de concevoir une application spécialement faîtes pour les personnes qui sont intéressés par les cryptomonnaies.  
+Notre projet a été lancé, dans l'idée de concevoir une application spécialement faîtes pour les personnes qui sont intéressées par les cryptomonnaies.  
 
 Présentation du projet:
 - 
 - **Les fonctionnalités**
-Nous avons donc pour cela mis en place un chat entre utilisateurs pour qu'ils communiquent à moindre coût mémoire. En effet pour ce projet nous avons donc décidé de travailler avec Firebase pour la partie base de données et stockages des informations (mot de passe, id, messages, photos, etc...).
-Suite à cela notre application vous permet de voir en temps réel tous les heures la variance des prix des cryptomonnaies, par exemple.
+Nous avons donc pour cela mis en place un chat entre utilisateurs pour qu'ils communiquent à moindre coût mémoire. En effet pour ce projet nous avons donc décidé de travailler avec Firebase pour la partie base de données et stockage des informations (mot de passe, id, messages, photos, etc...).
+Suite à cela notre application vous permet de voir en temps réel toutes les heures, la variance des prix des cryptomonnaies, par exemple.
 
 
 - **L'avenir de l'application**
@@ -47,6 +47,7 @@ Notre projet a encore beaucoup de chemin à faire. Nous pourrions y rajouter des
 
 
 **Firebase/ ApplicationMobile**
+
 ```mermaid
 sequenceDiagram
 Applicationmobile->> Firebase: URL, GET 
