@@ -3,6 +3,7 @@
 Equipe du projet:
 - TURRATA Augustin 
 - VERDY Sylvain
+
 Bonjour, nous sommes un groupe de deux étudiants qui ont crées notre application mobile.  Nous devions lors de ce projet répondre à des objectifs fixés. Nous avions mis en place une application en ***Kotlin***.
 
 Mais pour répondre à l'ensemble des objectifs nous devions mettre en place des méthodologies comme : **mvvm** et **Clean** **Architecture**.
