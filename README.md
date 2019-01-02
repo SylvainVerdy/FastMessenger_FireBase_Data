@@ -19,7 +19,7 @@ Pourquoi le chat et les cryptomonnaies??
 -
 Présentation du projet:
 - 
-- **Les fonctionnalités**
+- **Les fonctionnalitées**
 - **L'avenir de l'application**
 
 
@@ -29,7 +29,7 @@ Notre projet a été lancé, dans l'idée de concevoir une application spéciale
 
 Présentation du projet:
 - 
-- **Les fonctionnalités**
+- **Les fonctionnalitées**
 Nous avons donc pour cela mis en place un chat entre utilisateurs pour qu'ils communiquent à moindre coût mémoire. En effet pour ce projet nous avons donc décidé de travailler avec Firebase pour la partie base de données et stockage des informations (mot de passe, id, messages, photos, etc...).
 Suite à cela notre application vous permet de voir en temps réel toutes les heures, la variance des prix des cryptomonnaies, par exemple.
 
